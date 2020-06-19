@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CRUD operations.iml" filepath="$PROJECT_DIR$/.idea/CRUD operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crud-discovery-service/crud-discovery-service.iml" filepath="$PROJECT_DIR$/crud-discovery-service/crud-discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crud-operations/crud-operations.iml" filepath="$PROJECT_DIR$/crud-operations/crud-operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-delete-service/user-delete-service.iml" filepath="$PROJECT_DIR$/user-delete-service/user-delete-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-read-service/user-read-service.iml" filepath="$PROJECT_DIR$/user-read-service/user-read-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-save-service/user-save-service.iml" filepath="$PROJECT_DIR$/user-save-service/user-save-service.iml" />
+    </modules>
+  </component>
+</project>
