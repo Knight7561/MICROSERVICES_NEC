@@ -1,0 +1,5 @@
+com/example/userreadservice/ReadController.class
+com/example/userreadservice/models/User.class
+com/example/userreadservice/UserReadServiceApplication.class
+com/example/userreadservice/models/AllUsers.class
+com/example/userreadservice/UserRepository.class
