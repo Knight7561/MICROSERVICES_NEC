@@ -1,0 +1,38 @@
+# Ignore JDBC Dependency
+# This demo puts 3 applicatons in the same project, so by default they all pick
+# up the JDBC Depdendency, but this application doesn't need it.
+#spring.autoconfigure.exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# Map the error path to error template (for Thymeleaf)
+error.path: /error
+
+# HTTP Server
+server.port: 8084   # HTTP (Tomcat) port
+spring.jpa.hibernate.ddl-auto: update
+
+spring.datasource.url: jdbc:mysql://localhost:3306/db_example
+spring.datasource.username: root
+spring.datasource.password: Qwerty@123
+spring:
+  application:
+    name: user-delete-service
+#spring.datasource.url: jdbc:mysql://${mysql.server.hostname}:3306/db_example
+#spring.datasource.username: ${mysql.username}
+#spring.datasource.password: ${mysql.password}
+
+# Discovery Server Access
+#  1. DEV ONLY: Reduce the lease renewal interval to speed up registration
+#  2. Define URL of registration server (defaultZone)
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${registration.server.hostname}:8761/eureka/
+#         defaultZone: http://localhost:8761/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5  # DO NOT DO THIS IN PRODUCTION
+
+# Enable actuator access without security checks - DEVELOPEMENT ONLY
+# Spring Boot 1.5
+# management.security.enabled: false
+# Spring Boot 2.x
+management.endpoints.web.exposure.include: '*'
